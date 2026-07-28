@@ -39,6 +39,12 @@ importers:
         specifier: workspace:*
         version: link:../core
 
+  packages/signals:
+    dependencies:
+      '@quantrade/core':
+        specifier: workspace:*
+        version: link:../core
+
 packages:
 
   '@esbuild/aix-ppc64@0.21.5':
