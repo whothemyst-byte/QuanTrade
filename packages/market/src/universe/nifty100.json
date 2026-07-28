@@ -1,0 +1,502 @@
+[
+  {
+    "symbol": "TCS.NS",
+    "name": "Tata Consultancy Services",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "INFY.NS",
+    "name": "Infosys",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "HCLTECH.NS",
+    "name": "HCL Technologies",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "WIPRO.NS",
+    "name": "Wipro",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "TECHM.NS",
+    "name": "Tech Mahindra",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "MPHASIS.NS",
+    "name": "Mphasis",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "PERSISTENT.NS",
+    "name": "Persistent Systems",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "COFORGE.NS",
+    "name": "Coforge",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "HDFCBANK.NS",
+    "name": "HDFC Bank",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "ICICIBANK.NS",
+    "name": "ICICI Bank",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "SBIN.NS",
+    "name": "State Bank of India",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "KOTAKBANK.NS",
+    "name": "Kotak Mahindra Bank",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "AXISBANK.NS",
+    "name": "Axis Bank",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "BAJFINANCE.NS",
+    "name": "Bajaj Finance",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "BAJAJFINSV.NS",
+    "name": "Bajaj Finserv",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "INDUSINDBK.NS",
+    "name": "IndusInd Bank",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "SBILIFE.NS",
+    "name": "SBI Life Insurance",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "HDFCLIFE.NS",
+    "name": "HDFC Life Insurance",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "BANKBARODA.NS",
+    "name": "Bank of Baroda",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "PNB.NS",
+    "name": "Punjab National Bank",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "CANBK.NS",
+    "name": "Canara Bank",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "IDFCFIRSTB.NS",
+    "name": "IDFC First Bank",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "CHOLAFIN.NS",
+    "name": "Cholamandalam Investment",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "MUTHOOTFIN.NS",
+    "name": "Muthoot Finance",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "HDFCAMC.NS",
+    "name": "HDFC Asset Management",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "ICICIGI.NS",
+    "name": "ICICI Lombard",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "ICICIPRULI.NS",
+    "name": "ICICI Prudential Life",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "SBICARD.NS",
+    "name": "SBI Cards",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "LICI.NS",
+    "name": "Life Insurance Corporation",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "PFC.NS",
+    "name": "Power Finance Corporation",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "RECLTD.NS",
+    "name": "REC",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "JIOFIN.NS",
+    "name": "Jio Financial Services",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "RELIANCE.NS",
+    "name": "Reliance Industries",
+    "sector": "Energy"
+  },
+  {
+    "symbol": "ONGC.NS",
+    "name": "Oil & Natural Gas Corporation",
+    "sector": "Energy"
+  },
+  {
+    "symbol": "BPCL.NS",
+    "name": "Bharat Petroleum",
+    "sector": "Energy"
+  },
+  {
+    "symbol": "IOC.NS",
+    "name": "Indian Oil Corporation",
+    "sector": "Energy"
+  },
+  {
+    "symbol": "HINDPETRO.NS",
+    "name": "Hindustan Petroleum",
+    "sector": "Energy"
+  },
+  {
+    "symbol": "GAIL.NS",
+    "name": "GAIL India",
+    "sector": "Energy"
+  },
+  {
+    "symbol": "COALINDIA.NS",
+    "name": "Coal India",
+    "sector": "Energy"
+  },
+  {
+    "symbol": "SUNPHARMA.NS",
+    "name": "Sun Pharmaceutical",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "CIPLA.NS",
+    "name": "Cipla",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "DRREDDY.NS",
+    "name": "Dr Reddys Laboratories",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "DIVISLAB.NS",
+    "name": "Divis Laboratories",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "APOLLOHOSP.NS",
+    "name": "Apollo Hospitals",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "TORNTPHARM.NS",
+    "name": "Torrent Pharmaceuticals",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "LUPIN.NS",
+    "name": "Lupin",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "AUROPHARMA.NS",
+    "name": "Aurobindo Pharma",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "ZYDUSLIFE.NS",
+    "name": "Zydus Lifesciences",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "HINDUNILVR.NS",
+    "name": "Hindustan Unilever",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "ITC.NS",
+    "name": "ITC",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "NESTLEIND.NS",
+    "name": "Nestle India",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "BRITANNIA.NS",
+    "name": "Britannia Industries",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "TATACONSUM.NS",
+    "name": "Tata Consumer Products",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "DABUR.NS",
+    "name": "Dabur India",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "GODREJCP.NS",
+    "name": "Godrej Consumer Products",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "MARICO.NS",
+    "name": "Marico",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "COLPAL.NS",
+    "name": "Colgate-Palmolive India",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "UNITDSPR.NS",
+    "name": "United Spirits",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "MARUTI.NS",
+    "name": "Maruti Suzuki",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "M&M.NS",
+    "name": "Mahindra & Mahindra",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "TMPV.NS",
+    "name": "Tata Motors Passenger Vehicles",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "BAJAJ-AUTO.NS",
+    "name": "Bajaj Auto",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "EICHERMOT.NS",
+    "name": "Eicher Motors",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "HEROMOTOCO.NS",
+    "name": "Hero MotoCorp",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "TVSMOTOR.NS",
+    "name": "TVS Motor",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "TITAN.NS",
+    "name": "Titan Company",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "TRENT.NS",
+    "name": "Trent",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "DMART.NS",
+    "name": "Avenue Supermarts",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "PAGEIND.NS",
+    "name": "Page Industries",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "MOTHERSON.NS",
+    "name": "Samvardhana Motherson",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "BOSCHLTD.NS",
+    "name": "Bosch",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "LT.NS",
+    "name": "Larsen & Toubro",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "SIEMENS.NS",
+    "name": "Siemens India",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "ABB.NS",
+    "name": "ABB India",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "HAVELLS.NS",
+    "name": "Havells India",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "INDIGO.NS",
+    "name": "InterGlobe Aviation",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "ADANIPORTS.NS",
+    "name": "Adani Ports",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "ADANIENT.NS",
+    "name": "Adani Enterprises",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "TATASTEEL.NS",
+    "name": "Tata Steel",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "JSWSTEEL.NS",
+    "name": "JSW Steel",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "HINDALCO.NS",
+    "name": "Hindalco Industries",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "VEDL.NS",
+    "name": "Vedanta",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "JINDALSTEL.NS",
+    "name": "Jindal Steel & Power",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "SAIL.NS",
+    "name": "Steel Authority of India",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "NMDC.NS",
+    "name": "NMDC",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "ULTRACEMCO.NS",
+    "name": "UltraTech Cement",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "SHREECEM.NS",
+    "name": "Shree Cement",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "AMBUJACEM.NS",
+    "name": "Ambuja Cements",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "GRASIM.NS",
+    "name": "Grasim Industries",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "ASIANPAINT.NS",
+    "name": "Asian Paints",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "BERGEPAINT.NS",
+    "name": "Berger Paints",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "PIDILITIND.NS",
+    "name": "Pidilite Industries",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "UPL.NS",
+    "name": "UPL",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "NTPC.NS",
+    "name": "NTPC",
+    "sector": "Utilities"
+  },
+  {
+    "symbol": "POWERGRID.NS",
+    "name": "Power Grid Corporation",
+    "sector": "Utilities"
+  },
+  {
+    "symbol": "TATAPOWER.NS",
+    "name": "Tata Power",
+    "sector": "Utilities"
+  },
+  {
+    "symbol": "ADANIGREEN.NS",
+    "name": "Adani Green Energy",
+    "sector": "Utilities"
+  },
+  {
+    "symbol": "BHARTIARTL.NS",
+    "name": "Bharti Airtel",
+    "sector": "Communication"
+  },
+  {
+    "symbol": "NAUKRI.NS",
+    "name": "Info Edge India",
+    "sector": "Communication"
+  },
+  {
+    "symbol": "DLF.NS",
+    "name": "DLF",
+    "sector": "RealEstate"
+  }
+]

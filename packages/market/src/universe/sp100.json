@@ -1,0 +1,517 @@
+[
+  {
+    "symbol": "AAPL",
+    "name": "Apple",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "MSFT",
+    "name": "Microsoft",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "NVDA",
+    "name": "NVIDIA",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "AVGO",
+    "name": "Broadcom",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "ORCL",
+    "name": "Oracle",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "CRM",
+    "name": "Salesforce",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "ADBE",
+    "name": "Adobe",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "CSCO",
+    "name": "Cisco Systems",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "ACN",
+    "name": "Accenture",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "INTC",
+    "name": "Intel",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "IBM",
+    "name": "IBM",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "TXN",
+    "name": "Texas Instruments",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "QCOM",
+    "name": "Qualcomm",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "INTU",
+    "name": "Intuit",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "NOW",
+    "name": "ServiceNow",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "AMAT",
+    "name": "Applied Materials",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "MU",
+    "name": "Micron Technology",
+    "sector": "Technology"
+  },
+  {
+    "symbol": "GOOGL",
+    "name": "Alphabet",
+    "sector": "Communication"
+  },
+  {
+    "symbol": "META",
+    "name": "Meta Platforms",
+    "sector": "Communication"
+  },
+  {
+    "symbol": "NFLX",
+    "name": "Netflix",
+    "sector": "Communication"
+  },
+  {
+    "symbol": "DIS",
+    "name": "Walt Disney",
+    "sector": "Communication"
+  },
+  {
+    "symbol": "CMCSA",
+    "name": "Comcast",
+    "sector": "Communication"
+  },
+  {
+    "symbol": "T",
+    "name": "AT&T",
+    "sector": "Communication"
+  },
+  {
+    "symbol": "VZ",
+    "name": "Verizon",
+    "sector": "Communication"
+  },
+  {
+    "symbol": "TMUS",
+    "name": "T-Mobile US",
+    "sector": "Communication"
+  },
+  {
+    "symbol": "CHTR",
+    "name": "Charter Communications",
+    "sector": "Communication"
+  },
+  {
+    "symbol": "AMZN",
+    "name": "Amazon",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "TSLA",
+    "name": "Tesla",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "HD",
+    "name": "Home Depot",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "MCD",
+    "name": "McDonalds",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "NKE",
+    "name": "Nike",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "LOW",
+    "name": "Lowes",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "SBUX",
+    "name": "Starbucks",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "BKNG",
+    "name": "Booking Holdings",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "TGT",
+    "name": "Target",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "F",
+    "name": "Ford Motor",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "GM",
+    "name": "General Motors",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "symbol": "WMT",
+    "name": "Walmart",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "PG",
+    "name": "Procter & Gamble",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "COST",
+    "name": "Costco",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "KO",
+    "name": "Coca-Cola",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "PEP",
+    "name": "PepsiCo",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "PM",
+    "name": "Philip Morris",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "MO",
+    "name": "Altria",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "MDLZ",
+    "name": "Mondelez",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "CL",
+    "name": "Colgate-Palmolive",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "KHC",
+    "name": "Kraft Heinz",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "symbol": "JPM",
+    "name": "JPMorgan Chase",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "BAC",
+    "name": "Bank of America",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "WFC",
+    "name": "Wells Fargo",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "GS",
+    "name": "Goldman Sachs",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "MS",
+    "name": "Morgan Stanley",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "C",
+    "name": "Citigroup",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "BLK",
+    "name": "BlackRock",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "SCHW",
+    "name": "Charles Schwab",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "AXP",
+    "name": "American Express",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "V",
+    "name": "Visa",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "MA",
+    "name": "Mastercard",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "USB",
+    "name": "U.S. Bancorp",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "PYPL",
+    "name": "PayPal",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "COF",
+    "name": "Capital One",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "MET",
+    "name": "MetLife",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "AIG",
+    "name": "American International Group",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "BNY",
+    "name": "BNY Mellon",
+    "sector": "Financials"
+  },
+  {
+    "symbol": "LLY",
+    "name": "Eli Lilly",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "UNH",
+    "name": "UnitedHealth",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "JNJ",
+    "name": "Johnson & Johnson",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "ABBV",
+    "name": "AbbVie",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "MRK",
+    "name": "Merck",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "TMO",
+    "name": "Thermo Fisher",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "ABT",
+    "name": "Abbott Laboratories",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "PFE",
+    "name": "Pfizer",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "AMGN",
+    "name": "Amgen",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "DHR",
+    "name": "Danaher",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "BMY",
+    "name": "Bristol-Myers Squibb",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "GILD",
+    "name": "Gilead Sciences",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "MDT",
+    "name": "Medtronic",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "CVS",
+    "name": "CVS Health",
+    "sector": "Healthcare"
+  },
+  {
+    "symbol": "XOM",
+    "name": "Exxon Mobil",
+    "sector": "Energy"
+  },
+  {
+    "symbol": "CVX",
+    "name": "Chevron",
+    "sector": "Energy"
+  },
+  {
+    "symbol": "COP",
+    "name": "ConocoPhillips",
+    "sector": "Energy"
+  },
+  {
+    "symbol": "CAT",
+    "name": "Caterpillar",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "GE",
+    "name": "GE Aerospace",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "RTX",
+    "name": "RTX",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "HON",
+    "name": "Honeywell",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "UNP",
+    "name": "Union Pacific",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "BA",
+    "name": "Boeing",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "DE",
+    "name": "Deere",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "LMT",
+    "name": "Lockheed Martin",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "UPS",
+    "name": "United Parcel Service",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "GD",
+    "name": "General Dynamics",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "MMM",
+    "name": "3M",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "FDX",
+    "name": "FedEx",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "EMR",
+    "name": "Emerson Electric",
+    "sector": "Industrials"
+  },
+  {
+    "symbol": "LIN",
+    "name": "Linde",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "DOW",
+    "name": "Dow",
+    "sector": "Materials"
+  },
+  {
+    "symbol": "NEE",
+    "name": "NextEra Energy",
+    "sector": "Utilities"
+  },
+  {
+    "symbol": "SO",
+    "name": "Southern Company",
+    "sector": "Utilities"
+  },
+  {
+    "symbol": "DUK",
+    "name": "Duke Energy",
+    "sector": "Utilities"
+  },
+  {
+    "symbol": "EXC",
+    "name": "Exelon",
+    "sector": "Utilities"
+  },
+  {
+    "symbol": "AMT",
+    "name": "American Tower",
+    "sector": "RealEstate"
+  },
+  {
+    "symbol": "SPG",
+    "name": "Simon Property Group",
+    "sector": "RealEstate"
+  }
+]

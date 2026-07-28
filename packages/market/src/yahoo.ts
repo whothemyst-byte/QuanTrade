@@ -2,8 +2,10 @@ import { BarSchema, type Bar } from "@quantrade/core";
 import type { MarketAdapter, NewsItem } from "./adapter.js";
 import { fetchJson } from "./http.js";
 
-const CHART = "https://query1.finance.yahoo.com/v8/finance/chart";
-const SEARCH = "https://query1.finance.yahoo.com/v1/finance/search";
+/** Yahoo serves identical data from two hosts. Having both lets us survive a
+ *  per-host rate limit, which is by far the most common failure here. */
+export const YAHOO_HOSTS = ["query1.finance.yahoo.com", "query2.finance.yahoo.com"] as const;
+export type YahooHost = (typeof YAHOO_HOSTS)[number];
 
 function toEpoch(date: string): number {
   return Math.floor(new Date(`${date}T00:00:00Z`).getTime() / 1000);
@@ -17,11 +19,19 @@ function toISODate(epochSeconds: number): string {
 }
 
 export class YahooAdapter implements MarketAdapter {
-  readonly name = "yahoo";
+  readonly name: string;
+  private readonly chart: string;
+  private readonly search: string;
+
+  constructor(host: YahooHost = "query1.finance.yahoo.com") {
+    this.name = `yahoo:${host.split(".")[0]}`;
+    this.chart = `https://${host}/v8/finance/chart`;
+    this.search = `https://${host}/v1/finance/search`;
+  }
 
   async dailyBars(symbol: string, from: string, to: string): Promise<Bar[]> {
     const url =
-      `${CHART}/${encodeURIComponent(symbol)}` +
+      `${this.chart}/${encodeURIComponent(symbol)}` +
       `?interval=1d&period1=${toEpoch(from)}&period2=${toEpoch(to) + 86400}`;
 
     const body = (await fetchJson(url)) as any;
@@ -56,7 +66,7 @@ export class YahooAdapter implements MarketAdapter {
   }
 
   async news(symbol: string, since: string): Promise<NewsItem[]> {
-    const url = `${SEARCH}?q=${encodeURIComponent(symbol)}&newsCount=10&quotesCount=0`;
+    const url = `${this.search}?q=${encodeURIComponent(symbol)}&newsCount=10&quotesCount=0`;
     const body = (await fetchJson(url)) as any;
     const cutoff = new Date(`${since}T00:00:00Z`).getTime();
 
