@@ -1,0 +1,27 @@
+{
+  "SOLID": [
+    { "symbol": "SOLID", "date": "2026-07-01", "open": 100, "high": 102, "low": 99, "close": 101, "volume": 10000 },
+    { "symbol": "SOLID", "date": "2026-07-02", "open": 101, "high": 104, "low": 100, "close": 103, "volume": 11000 },
+    { "symbol": "SOLID", "date": "2026-07-06", "open": 103, "high": 107, "low": 102, "close": 106, "volume": 12000 },
+    { "symbol": "SOLID", "date": "2026-07-07", "open": 106, "high": 110, "low": 105, "close": 109, "volume": 13000 },
+    { "symbol": "SOLID", "date": "2026-07-08", "open": 109, "high": 114, "low": 108, "close": 113, "volume": 14000 },
+    { "symbol": "SOLID", "date": "2026-07-09", "open": 113, "high": 121, "low": 112, "close": 120, "volume": 15000 }
+  ],
+  "GAPPY": [
+    { "symbol": "GAPPY", "date": "2026-07-01", "open": 200, "high": 203, "low": 198, "close": 202, "volume": 8000 },
+    { "symbol": "GAPPY", "date": "2026-07-02", "open": 202, "high": 205, "low": 200, "close": 204, "volume": 8500 },
+    { "symbol": "GAPPY", "date": "2026-07-06", "open": 170, "high": 175, "low": 168, "close": 172, "volume": 40000 }
+  ],
+  "CHOPPY": [
+    { "symbol": "CHOPPY", "date": "2026-07-01", "open": 50, "high": 51, "low": 49, "close": 50.5, "volume": 6000 },
+    { "symbol": "CHOPPY", "date": "2026-07-02", "open": 50.5, "high": 52, "low": 49.5, "close": 51, "volume": 6100 },
+    { "symbol": "CHOPPY", "date": "2026-07-06", "open": 51, "high": 52, "low": 50, "close": 50.8, "volume": 6200 },
+    { "symbol": "CHOPPY", "date": "2026-07-07", "open": 50.8, "high": 51.5, "low": 50, "close": 51.2, "volume": 6300 },
+    { "symbol": "CHOPPY", "date": "2026-07-08", "open": 51.2, "high": 52, "low": 50.5, "close": 51.5, "volume": 6400 },
+    { "symbol": "CHOPPY", "date": "2026-07-09", "open": 51.5, "high": 52.5, "low": 51, "close": 52, "volume": 6500 }
+  ],
+  "WHIPSAW": [
+    { "symbol": "WHIPSAW", "date": "2026-07-01", "open": 300, "high": 305, "low": 297, "close": 303, "volume": 9000 },
+    { "symbol": "WHIPSAW", "date": "2026-07-02", "open": 303, "high": 340, "low": 265, "close": 310, "volume": 90000 }
+  ]
+}
