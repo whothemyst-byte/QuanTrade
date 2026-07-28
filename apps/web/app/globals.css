@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Colour utilities come from @theme: --color-accent gives bg-accent /
+   text-accent / border-accent, and so on.
+
+   Typography does NOT go through @theme. Tailwind was not emitting .font-*
+   utilities for these keys, so the three families are applied with plain CSS
+   below — deterministic, and one less framework behaviour to depend on. */
 @theme {
   --color-bg: oklch(0.16 0.008 70);
   --color-surface: oklch(0.21 0.010 70);
@@ -10,15 +16,24 @@
   --color-accent: #d79a3d;
   --color-long: oklch(0.72 0.14 150);
   --color-short: oklch(0.68 0.17 25);
+
 }
 
-html, body {
+html,
+body {
   background: var(--color-bg);
   color: var(--color-text);
+  font-family: var(--font-sans-src), system-ui, sans-serif;
+}
+
+/* Editorial serif for headings and the wordmark. */
+.serif {
+  font-family: var(--font-serif-src), Georgia, "Times New Roman", serif;
+  font-weight: 400;
 }
 
 /* Every price, P&L, and percentage is tabular so columns align down the page. */
 .num {
   font-variant-numeric: tabular-nums;
-  font-family: var(--font-mono), ui-monospace, monospace;
+  font-family: var(--font-mono-src), ui-monospace, monospace;
 }

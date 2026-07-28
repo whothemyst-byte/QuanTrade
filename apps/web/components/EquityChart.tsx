@@ -8,14 +8,14 @@ import type { CurvePoint } from "@/lib/stats";
 export function EquityChart({ data, label }: { data: CurvePoint[]; label: string }) {
   if (data.length === 0) {
     return (
-      <div className="h-64 grid place-items-center rounded-lg border border-[--color-border] bg-[--color-surface]">
-        <p className="text-sm text-[--color-muted]">No equity history yet.</p>
+      <div className="h-64 grid place-items-center rounded-lg border border-border bg-surface">
+        <p className="text-sm text-muted">No equity history yet.</p>
       </div>
     );
   }
 
   return (
-    <div className="h-72 rounded-lg border border-[--color-border] bg-[--color-surface] p-3">
+    <div className="h-72 rounded-lg border border-border bg-surface p-3">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data} margin={{ top: 8, right: 8, bottom: 0, left: 0 }}>
           <CartesianGrid stroke="oklch(0.32 0.012 70)" strokeDasharray="2 4" vertical={false} />

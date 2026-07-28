@@ -26,21 +26,21 @@ export default async function PositionsPage() {
   return (
     <div className="flex flex-col gap-10">
       <div>
-        <h1 className="font-[family-name:var(--font-display)] text-3xl">Positions</h1>
-        <p className="text-sm text-[--color-muted] mt-1">
+        <h1 className="serif text-3xl">Positions</h1>
+        <p className="text-sm text-muted mt-1">
           Marked to the last daily close. This is end-of-day data — not a live quote.
         </p>
       </div>
 
       {sections.map(({ book, positions, marks }) => (
         <section key={book.id} className="flex flex-col gap-3">
-          <div className="flex items-baseline justify-between border-b border-[--color-border] pb-2">
+          <div className="flex items-baseline justify-between border-b border-border pb-2">
             <h2 className="text-lg">{book.label}</h2>
-            <span className="text-xs text-[--color-muted]">{positions.length} open</span>
+            <span className="text-xs text-muted">{positions.length} open</span>
           </div>
 
           {positions.length === 0 ? (
-            <p className="text-sm text-[--color-muted]">No open positions.</p>
+            <p className="text-sm text-muted">No open positions.</p>
           ) : (
             positions.map((p) => {
               const mark = marks[p.symbol]?.close ?? null;
@@ -50,12 +50,12 @@ export default async function PositionsPage() {
               return (
                 <article
                   key={p.id}
-                  className="rounded-lg border border-[--color-border] bg-[--color-surface] p-4 flex flex-col gap-3"
+                  className="rounded-lg border border-border bg-surface p-4 flex flex-col gap-3"
                 >
                   <header className="flex items-start justify-between">
                     <div>
                       <h3 className="num">{p.symbol}</h3>
-                      <p className="text-xs text-[--color-muted]">
+                      <p className="text-xs text-muted">
                         {p.direction} · {p.qty} @ {money(p.entryPrice, book.currency)} ·{" "}
                         {shortDate(p.entryDate)}
                       </p>
@@ -63,12 +63,12 @@ export default async function PositionsPage() {
                     <div className="text-right">
                       <div
                         className={`num text-lg ${
-                          (up ?? 0) >= 0 ? "text-[--color-long]" : "text-[--color-short]"
+                          (up ?? 0) >= 0 ? "text-long" : "text-short"
                         }`}
                       >
                         {signedPct(up)}
                       </div>
-                      <div className="text-xs text-[--color-muted] num">
+                      <div className="text-xs text-muted num">
                         {mark ? money(mark, book.currency) : "no mark"}
                       </div>
                     </div>
@@ -76,19 +76,19 @@ export default async function PositionsPage() {
 
                   {/* Stop -- price -- target. Makes "about to be stopped out" visible at a glance. */}
                   <div>
-                    <div className="relative h-1.5 rounded-full bg-[--color-raised]">
+                    <div className="relative h-1.5 rounded-full bg-raised">
                       <div
-                        className="absolute top-1/2 -translate-y-1/2 size-3 rounded-full bg-[--color-accent] border-2 border-[--color-surface]"
+                        className="absolute top-1/2 -translate-y-1/2 size-3 rounded-full bg-accent border-2 border-surface"
                         style={{ left: `calc(${pos * 100}% - 6px)` }}
                       />
                     </div>
-                    <div className="flex justify-between mt-1 text-[11px] text-[--color-muted] num">
+                    <div className="flex justify-between mt-1 text-[11px] text-muted num">
                       <span>stop {money(p.stopLoss, book.currency)}</span>
                       <span>target {money(p.target, book.currency)}</span>
                     </div>
                   </div>
 
-                  <p className="text-xs text-[--color-muted]">
+                  <p className="text-xs text-muted">
                     Max hold {p.maxHoldSessions} sessions
                     {marks[p.symbol] ? ` · marked ${shortDate(marks[p.symbol]!.date)}` : ""}
                   </p>

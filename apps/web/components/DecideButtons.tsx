@@ -22,7 +22,7 @@ export function DecideButtons({ proposalId }: { proposalId: string }) {
 
   if (done) {
     return (
-      <p className="text-sm text-[--color-muted]">
+      <p className="text-sm text-muted">
         {done === "approved" ? "Approved — fills at the next open." : "Rejected — tracked in the shadow book."}
       </p>
     );
@@ -34,19 +34,19 @@ export function DecideButtons({ proposalId }: { proposalId: string }) {
         <button
           disabled={pending}
           onClick={() => decide("approved")}
-          className="flex-1 rounded-md bg-[--color-long] text-black font-medium py-2.5 text-sm disabled:opacity-50"
+          className="flex-1 rounded-md bg-long text-black font-medium py-2.5 text-sm disabled:opacity-50"
         >
           {pending ? "Saving…" : "Approve"}
         </button>
         <button
           disabled={pending}
           onClick={() => decide("rejected")}
-          className="flex-1 rounded-md border border-[--color-border] py-2.5 text-sm disabled:opacity-50"
+          className="flex-1 rounded-md border border-border py-2.5 text-sm disabled:opacity-50"
         >
           Reject
         </button>
       </div>
-      {error && <p className="text-xs text-[--color-short]">{error}</p>}
+      {error && <p className="text-xs text-short">{error}</p>}
     </div>
   );
 }

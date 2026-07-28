@@ -7,8 +7,8 @@ export const dynamic = "force-dynamic";
 
 function Signal({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-md bg-[--color-bg] px-2.5 py-1.5">
-      <div className="text-[10px] uppercase tracking-wide text-[--color-muted]">{label}</div>
+    <div className="rounded-md bg-bg px-2.5 py-1.5">
+      <div className="text-[10px] uppercase tracking-wide text-muted">{label}</div>
       <div className="num text-sm">{value}</div>
     </div>
   );
@@ -28,8 +28,8 @@ export default async function InboxPage() {
   return (
     <div className="flex flex-col gap-10">
       <div>
-        <h1 className="font-[family-name:var(--font-display)] text-3xl">Inbox</h1>
-        <p className="text-sm text-[--color-muted] mt-1">
+        <h1 className="serif text-3xl">Inbox</h1>
+        <p className="text-sm text-muted mt-1">
           Approve or reject. Rejected ideas are still simulated, so you can see whether
           your filtering helps.
         </p>
@@ -37,16 +37,16 @@ export default async function InboxPage() {
 
       {sections.map(({ book, proposals, lastRun }) => (
         <section key={book.id} className="flex flex-col gap-4">
-          <div className="flex items-baseline justify-between border-b border-[--color-border] pb-2">
+          <div className="flex items-baseline justify-between border-b border-border pb-2">
             <h2 className="text-lg">{book.label}</h2>
-            <span className="text-xs text-[--color-muted]">
+            <span className="text-xs text-muted">
               {proposals.length} pending
               {lastRun ? ` · last run ${shortDate(lastRun.at)}` : ""}
             </span>
           </div>
 
           {proposals.length === 0 ? (
-            <div className="rounded-lg border border-[--color-border] bg-[--color-surface] p-5">
+            <div className="rounded-lg border border-border bg-surface p-5">
               <p className="text-sm">
                 Nothing waiting on you.
                 {lastRun?.status === "failed"
@@ -54,7 +54,7 @@ export default async function InboxPage() {
                   : " The agent looked and stood aside."}
               </p>
               {lastRun?.error && (
-                <p className="mt-2 text-xs text-[--color-short] num">{lastRun.error}</p>
+                <p className="mt-2 text-xs text-short num">{lastRun.error}</p>
               )}
             </div>
           ) : (
@@ -68,21 +68,21 @@ export default async function InboxPage() {
               return (
                 <article
                   key={p.id}
-                  className="rounded-lg border border-[--color-border] bg-[--color-surface] p-5 flex flex-col gap-4"
+                  className="rounded-lg border border-border bg-surface p-5 flex flex-col gap-4"
                 >
                   <header className="flex items-start justify-between gap-4">
                     <div>
                       <h3 className="text-lg num">{p.symbol}</h3>
                       <span
                         className={`text-xs uppercase tracking-wide ${
-                          p.direction === "long" ? "text-[--color-long]" : "text-[--color-short]"
+                          p.direction === "long" ? "text-long" : "text-short"
                         }`}
                       >
                         {p.direction}
                       </span>
                     </div>
                     <div className="text-right">
-                      <div className="text-xs text-[--color-muted]">conviction</div>
+                      <div className="text-xs text-muted">conviction</div>
                       <div className="num text-sm">{pct(p.conviction * 100)}</div>
                     </div>
                   </header>
@@ -90,8 +90,8 @@ export default async function InboxPage() {
                   {/* The thesis is the entire basis for the decision — never truncated. */}
                   <p className="text-sm leading-relaxed">{p.thesis}</p>
 
-                  <div className="rounded-md border border-[--color-accent]/40 bg-[--color-accent]/5 px-3 py-2">
-                    <div className="text-[10px] uppercase tracking-wide text-[--color-accent]">
+                  <div className="rounded-md border border-accent/40 bg-accent/5 px-3 py-2">
+                    <div className="text-[10px] uppercase tracking-wide text-accent">
                       What would prove this wrong
                     </div>
                     <p className="text-sm mt-0.5">{p.falsifier}</p>
@@ -117,7 +117,7 @@ export default async function InboxPage() {
                         <a
                           key={r}
                           href="/mind"
-                          className="num text-[11px] rounded-full border border-[--color-border] px-2 py-0.5 text-[--color-muted]"
+                          className="num text-[11px] rounded-full border border-border px-2 py-0.5 text-muted"
                         >
                           {r}
                         </a>
@@ -126,7 +126,7 @@ export default async function InboxPage() {
                   )}
 
                   <footer className="flex flex-col gap-2">
-                    <span className="text-xs text-[--color-muted]">{countdown(p.expiresAt)}</span>
+                    <span className="text-xs text-muted">{countdown(p.expiresAt)}</span>
                     <DecideButtons proposalId={p.id} />
                   </footer>
                 </article>

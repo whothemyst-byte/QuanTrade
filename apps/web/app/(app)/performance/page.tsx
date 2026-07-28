@@ -8,10 +8,10 @@ export const dynamic = "force-dynamic";
 
 function Tile({ label, value, note }: { label: string; value: string; note?: string }) {
   return (
-    <div className="rounded-lg border border-[--color-border] bg-[--color-surface] px-3 py-2.5">
-      <div className="text-[10px] uppercase tracking-wide text-[--color-muted]">{label}</div>
+    <div className="rounded-lg border border-border bg-surface px-3 py-2.5">
+      <div className="text-[10px] uppercase tracking-wide text-muted">{label}</div>
       <div className="num text-lg mt-0.5">{value}</div>
-      {note && <div className="text-[11px] text-[--color-muted] mt-0.5">{note}</div>}
+      {note && <div className="text-[11px] text-muted mt-0.5">{note}</div>}
     </div>
   );
 }
@@ -41,8 +41,8 @@ export default async function PerformancePage() {
   return (
     <div className="flex flex-col gap-10">
       <div>
-        <h1 className="font-[family-name:var(--font-display)] text-3xl">Performance</h1>
-        <p className="text-sm text-[--color-muted] mt-1">
+        <h1 className="serif text-3xl">Performance</h1>
+        <p className="text-sm text-muted mt-1">
           Against buy-and-hold, from day one. Ten trades tell you nothing, thirty hint,
           a hundred begin to mean something.
         </p>
@@ -50,9 +50,9 @@ export default async function PerformancePage() {
 
       {sections.map(({ meta, starting, stats, shadowStats, curve }) => (
         <section key={meta.id} className="flex flex-col gap-4">
-          <div className="flex items-baseline justify-between border-b border-[--color-border] pb-2">
+          <div className="flex items-baseline justify-between border-b border-border pb-2">
             <h2 className="text-lg">{meta.label}</h2>
-            <span className="text-xs text-[--color-muted]">
+            <span className="text-xs text-muted">
               {stats.tradeCount} closed trade{stats.tradeCount === 1 ? "" : "s"}
             </span>
           </div>
@@ -83,9 +83,9 @@ export default async function PerformancePage() {
 
           <EquityChart data={curve} label={meta.label} />
 
-          <div className="rounded-lg border border-[--color-border] bg-[--color-surface] p-4">
+          <div className="rounded-lg border border-border bg-surface p-4">
             <h3 className="text-sm mb-2">Real book vs shadow book</h3>
-            <p className="text-xs text-[--color-muted] mb-3">
+            <p className="text-xs text-muted mb-3">
               The shadow book holds the trades you rejected or let expire, simulated
               identically. If it beats the real book, your filtering is costing you.
             </p>
