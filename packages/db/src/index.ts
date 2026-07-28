@@ -36,6 +36,7 @@ export function createDb(url: string, serviceKey: string) {
     getClosedPositions: q.getClosedPositions.bind(null, sb),
     insertPostMortem: q.insertPostMortem.bind(null, sb),
     countClosedSinceLastReflection: q.countClosedSinceLastReflection.bind(null, sb),
+    countReflections: q.countReflections.bind(null, sb),
     insertReflection: q.insertReflection.bind(null, sb),
   };
 }

@@ -1,0 +1,75 @@
+name: QuanTrade
+
+on:
+  schedule:
+    - cron: "15 3 * * 1-5"   # 08:45 IST — propose NSE
+    - cron: "15 10 * * 1-5"  # 15:45 IST — settle NSE
+    - cron: "30 12 * * 1-5"  # 18:00 IST — propose US
+    - cron: "15 21 * * 1-5"  # 02:45 IST — settle US
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "propose | settle | reflect"
+        required: true
+        default: "propose"
+      market:
+        description: "NSE | US"
+        required: true
+        default: "US"
+
+# A settle cancelled halfway is exactly the partial write the job works to
+# prevent, so queued runs wait rather than replacing one another.
+concurrency:
+  group: quantrade-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # the reflection job commits AGENT.md
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Decide the job from the schedule
+        id: decide
+        run: |
+          case "${{ github.event.schedule }}" in
+            "15 3 * * 1-5")   echo "job=propose" >> $GITHUB_OUTPUT; echo "market=NSE" >> $GITHUB_OUTPUT ;;
+            "15 10 * * 1-5")  echo "job=settle"  >> $GITHUB_OUTPUT; echo "market=NSE" >> $GITHUB_OUTPUT ;;
+            "30 12 * * 1-5")  echo "job=propose" >> $GITHUB_OUTPUT; echo "market=US"  >> $GITHUB_OUTPUT ;;
+            "15 21 * * 1-5")  echo "job=settle"  >> $GITHUB_OUTPUT; echo "market=US"  >> $GITHUB_OUTPUT ;;
+            *) echo "job=${{ inputs.job }}" >> $GITHUB_OUTPUT; echo "market=${{ inputs.market }}" >> $GITHUB_OUTPUT ;;
+          esac
+
+      - name: Run
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: pnpm tsx agent/src/cli.ts ${{ steps.decide.outputs.job }} ${{ steps.decide.outputs.market }}
+
+      - name: Push any AGENT.md amendment
+        if: steps.decide.outputs.job == 'settle' || steps.decide.outputs.job == 'reflect'
+        run: |
+          if [ -n "$(git log origin/main..HEAD --oneline)" ]; then
+            git push origin HEAD:main
+          else
+            echo "No agent commits to push."
+          fi

@@ -277,6 +277,15 @@ export async function countClosedSinceLastReflection(
   return res.count ?? 0;
 }
 
+/** How many reflections this book has already had, so the next one is n+1. */
+export async function countReflections(sb: SupabaseClient, bookId: string): Promise<number> {
+  const res = await sb.from("reflections")
+    .select("id", { count: "exact", head: true })
+    .eq("book_id", bookId);
+  if (res.error) throw new Error(`countReflections: ${res.error.message}`);
+  return res.count ?? 0;
+}
+
 export async function insertReflection(
   sb: SupabaseClient,
   row: {
