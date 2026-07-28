@@ -1,0 +1,36 @@
+{
+  "news": [
+    {
+      "uuid": "42b54c9a-bea6-34c2-b4c1-c591f2ef878b",
+      "title": "Will this be the quarter Big Tech breaks out?",
+      "publisher": "Investing.com",
+      "link": "https://finance.yahoo.com/technology/articles/quarter-big-tech-breaks-110400859.html",
+      "providerPublishTime": 1785236640,
+      "type": "STORY"
+    },
+    {
+      "uuid": "81aeb192-b29c-3971-b8d9-034e291bb571",
+      "title": "PayPal presses on with turnaround in pivotal quarter as sale questions linger",
+      "publisher": "Reuters",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/paypal-presses-turnaround-pivotal-quarter-110310369.html",
+      "providerPublishTime": 1785236590,
+      "type": "STORY"
+    },
+    {
+      "uuid": "1369c4e1-a8e3-36bd-8c3e-5da919884b5a",
+      "title": "Nvidia Stock Hasn’t Been This Cheap Since 2015–and It’s Getting Even Cheaper",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/1369c4e1-a8e3-36bd-8c3e-5da919884b5a/nvidia-stock-hasn%E2%80%99t-been-this.html",
+      "providerPublishTime": 1785236280,
+      "type": "STORY"
+    },
+    {
+      "uuid": "340e6487-2c66-37dd-a796-ed5a3368ed83",
+      "title": "ASML, Sandisk, Apple, and More Stocks That Explain Today’s Market",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/340e6487-2c66-37dd-a796-ed5a3368ed83/asml%2C-sandisk%2C-apple%2C-and.html",
+      "providerPublishTime": 1785236100,
+      "type": "STORY"
+    }
+  ]
+}
