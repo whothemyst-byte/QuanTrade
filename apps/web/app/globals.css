@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: oklch(0.16 0.008 70);
+  --color-surface: oklch(0.21 0.010 70);
+  --color-raised: oklch(0.25 0.011 70);
+  --color-border: oklch(0.32 0.012 70);
+  --color-text: oklch(0.93 0.008 80);
+  --color-muted: oklch(0.68 0.012 80);
+  --color-accent: #d79a3d;
+  --color-long: oklch(0.72 0.14 150);
+  --color-short: oklch(0.68 0.17 25);
+}
+
+html, body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Every price, P&L, and percentage is tabular so columns align down the page. */
+.num {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-mono), ui-monospace, monospace;
+}

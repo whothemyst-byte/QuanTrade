@@ -5,3 +5,4 @@ dist/
 .env.local
 *.tsbuildinfo
 .vercel/
+next-env.d.ts
